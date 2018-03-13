@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Laba2part2
+namespace Laba2Part2
 {
     class Program
     {
@@ -17,11 +17,11 @@ namespace Laba2part2
             Console.WriteLine("Введите значение y");
             double y = Convert.ToDouble(Console.ReadLine());
             if (x >= -r && x <= 0 && y <= -Math.Sqrt(Math.Pow(r, 2) - Math.Pow(x + r, 2)) + r && y >= 0)
-            Console.WriteLine("Точка принадлежит области");
+                Console.WriteLine("Точка принадлежит области");
             else if (x >= 0 && x <= r && y >= -Math.Sqrt(Math.Pow(r, 2) - Math.Pow(x, 2)) && y <= 0)
-            Console.WriteLine("Точка принадлежит области");
+                Console.WriteLine("Точка принадлежит области");
             else
-            Console.WriteLine("Точка не принадлежит области");
+                Console.WriteLine("Точка не принадлежит области");
             Console.ReadKey();
         }
     }
