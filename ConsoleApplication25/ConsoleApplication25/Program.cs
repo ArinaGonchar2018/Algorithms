@@ -51,11 +51,9 @@ namespace ConsoleApplication4
                 Console.WriteLine("Значение находится вне пределов интервала");
 
             }
-                Console.WriteLine("y=" + y);
-                Console.ReadKey();
+            Console.WriteLine("y=" + y);
+            Console.ReadKey();
 
-              }
-            }
-          }
-       
-
+        }
+    }
+}
