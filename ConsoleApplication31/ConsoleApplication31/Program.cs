@@ -4,17 +4,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApplication33
+namespace ConsoleApplication31
 {
     class Program
     {
         static void Main(string[] args)
         {
             double y = 0;
-            Console.WriteLine("Введите координату х");
+            Console.WriteLine("Введите значение х");           
             string X = Console.ReadLine();
             double x = Convert.ToDouble(X);
-            if (x >= -7 & x <= -6)
+            if (x >= -7 & x < -6)
             {
                 y = 1;
             }
@@ -36,20 +36,21 @@ namespace ConsoleApplication33
                 double R = Convert.ToDouble(r);
                 y = Math.Sqrt(1 - Math.Pow(x - 1, 2));
             }
-            else if (x > 2 & x < 3)
+            else if (x > 2 & x < 2)
             {
                 y = -x + 2;
             }
             else if (x > 3)
             {
-                Console.WriteLine("Значениe находятся вне пределов интервала");
+                Console.WriteLine("Значение находятся вне пределов интервала");                
             }
             else
             {
-                Console.WriteLine("Значениe находятся вне пределов интервала");
+                Console.WriteLine("Значение находятся вне пределов интервала");
             }
             Console.WriteLine("y=" + y);
             Console.ReadKey();
+             
         }
     }
 }
